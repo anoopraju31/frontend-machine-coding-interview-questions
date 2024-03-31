@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 export default function SelectableGrid({ rows = 10, columns = 10 }) {
 	return (
 		<div
@@ -15,4 +17,9 @@ export default function SelectableGrid({ rows = 10, columns = 10 }) {
 			))}
 		</div>
 	)
+}
+
+SelectableGrid.propTypes = {
+	rows: PropTypes.number,
+	columns: PropTypes.number,
 }
